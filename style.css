@@ -1,0 +1,130 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-color: hsl(0, 0%, 95%);
+	color: hsla(0, 0%, 100%, 0.75);
+	font-size: 15px;
+}
+
+h1{
+	color:hsl(0, 0%, 95%);
+}
+
+p {
+ 
+  line-height: 1.5;
+  font-size: 15px;
+  font-family:'Lexend Deca';
+
+} 
+
+.grid-cars {
+	
+	height: 100%;
+	display: grid;
+	padding: 0px;
+	grid-template-columns: 20% 20% 20%;
+	grid-template-rows: 83%;
+	justify-content: center;
+	align-content: center;
+
+}
+
+.sedan {
+	
+	border-radius: 10px 0px 0px 10px;
+	background-color: hsl(31, 77%, 52%);
+
+}
+
+.sedan button {
+	color: hsl(31, 77%, 52%);
+	border-color: hsl(31, 77%, 52%);
+}
+
+.suv {
+	background-color: hsl(184, 100%, 22%);
+}
+
+.suv button {
+	color: hsl(184, 100%, 22%);
+	border-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+	background-color: hsl(179, 100%, 13%);
+	border-radius: 0px 10px 10px 0px;
+}
+
+.luxury button {
+	color: hsl(179, 100%, 13%);
+	border-color: hsl(179, 100%, 13%);
+}
+
+
+
+article {
+	padding: 3rem;
+	font-family: 'Lexend Deca';
+	font-weight: 300;
+	font-size: 0.75rem;
+}
+
+h1 {
+	font-family: 'Big Shoulders Display';
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+button {
+	background-color: hsl(0, 0%, 95%);
+	border: solid;
+	border-color: inherit;
+	color: hsla(0,0%,100%,50%);
+	border-radius: 50px;
+	padding: 0.7rem 1rem;
+	margin-top: 3rem;
+	font-family: "Lexend Deca";
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	font-family: "Lexend Deca";
+
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+/* 
+Cambios a la apariencia de teléfono
+*/
+
+@media (max-width: 375px) {
+	
+	.grid-cars {
+
+	display:block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 52rem;
+
+
+	}
+
+	.sedan {
+		border-radius: 10px 10px 0 0;
+	}
+
+	.luxury {
+		border-radius: 0 0 10px 10px;
+	}
+
+}
